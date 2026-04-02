@@ -31,7 +31,7 @@ public class InternationalTranctionUsingKafkaAutomation {
         String password = "@coe$rv!@#";
 
         // === PATHS ===
-        String templateFilePath = "C:\\Users\\User\\Downloads\\JsonFile_FlinkPay.txt";  // file with placeholders
+        String templateFilePath = "./src/test/resources/Testdata/JsonFile_FlinkPay.txt";  // file with placeholders
         String remoteUploadDir = "/home/chidori/Flink_Pay/swift_files/";
         String remoteScriptPath = "/home/chidori/Flink_Pay/kafka/bin/pushTxn.sh";
 
@@ -70,7 +70,7 @@ public class InternationalTranctionUsingKafkaAutomation {
 
         // Create a new local file with a unique name
         String fileName = "ATM_TRXN_" + transactionId + ".txt";
-        String outputPath = "C:\\Users\\User\\Desktop\\paymentTrxn\\" + fileName;
+        String outputPath = "./src/test/resources/Testdata/" + fileName;
 
         // Write the processed content to new file
         Files.write(Paths.get(outputPath), content.getBytes());

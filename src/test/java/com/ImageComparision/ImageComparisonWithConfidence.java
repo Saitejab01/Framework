@@ -81,7 +81,7 @@ public class ImageComparisonWithConfidence {
             g.dispose();
 
             // Save difference image
-            String diffPath = "C:\\Users\\User\\OneDrive\\Pictures\\Screenshots 1\\difference.png";
+            String diffPath = "./src/test/resources/Testdata/difference.png";
             ImageIO.write(diffImage, "png", new File(diffPath));
             System.out.println("🖼️ Difference image saved at: " + diffPath);
 

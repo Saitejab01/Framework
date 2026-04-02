@@ -18,10 +18,10 @@ public class GmailLatestMailBySubject {
 
     public static void main(String[] args) {
         String host = "imap.gmail.com";
-        String username = "";   // your Gmail
-        String password = "";      // Gmail App Password
+        String username = "stevetest112233@gmail.com";   // your Gmail
+        String password = "vcrb mkwg gpjg woxo";      // Gmail App Password
 
-        String searchSubject = ""; // <<< subject to search
+        String searchSubject = "Application KT"; // <<< subject to search
 
         Properties props = new Properties();
         props.put("mail.store.protocol", "imaps");
