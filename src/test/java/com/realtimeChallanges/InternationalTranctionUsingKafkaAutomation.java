@@ -11,7 +11,7 @@ import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class InternationalTranctionUsingKafkaAutomation {
@@ -28,7 +28,8 @@ public class InternationalTranctionUsingKafkaAutomation {
         int port = 22;
         String host = "49.249.29.5";
         String username = "chidori";
-        String password = "@coe$rv!@#";
+//        String password = "@coe$rv!@#";
+        String password = "acoe@123";
 
         // === PATHS ===
         String templateFilePath = "./src/test/resources/Testdata/JsonFile_FlinkPay.txt";  // file with placeholders
@@ -168,7 +169,7 @@ public class InternationalTranctionUsingKafkaAutomation {
         }
     }
     public static void validation(String transactionId) {
-        WebDriver driver = new FirefoxDriver();
+        WebDriver driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         driver.get("http://49.249.29.5:8091/");
@@ -183,6 +184,6 @@ public class InternationalTranctionUsingKafkaAutomation {
         }else {
             System.out.println("The "+transactionId+" is not same in Flink_Pay");
         }
-        driver.quit();
+//        driver.quit();
     }
-}
+} 

@@ -63,7 +63,7 @@ public class EndToEndSystemTest {
     public void crmFullFlow() throws Throwable {
 
         // ====================== EXCEL SETUP ======================
-        File f = new File("C:\\Users\\User\\FireFlinkProjects\\unifiedFramework\\src\\test\\resources\\MasterExcel.xlsx");
+        File f = new File(".\\src\\test\\resources\\MasterExcel.xlsx");
         FileInputStream fis = new FileInputStream(f);
         Workbook wb = WorkbookFactory.create(fis);
         fis.close();
